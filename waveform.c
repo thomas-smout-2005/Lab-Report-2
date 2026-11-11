@@ -8,7 +8,7 @@
 
 
 int main(void)
-    while (1) {
+{   while (1) {
         if 
 
 
@@ -16,3 +16,4 @@ int main(void)
 
         k_sleep(K_MSEC(10));
     }
+}
