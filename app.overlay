@@ -13,12 +13,12 @@
 
         bus_sb2: led_2 { 
             gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>; 
-            label = "Bus MSB"; 
+            label = "Bus SB2"; 
         }; 
 
         bus_sb3: led_3 { 
             gpios = <&gpio2 ?? GPIO_ACTIVE_HIGH>; 
-            label = "Bus MSB"; 
+            label = "Bus SB3"; 
         };
 
         bus_msb: led_3 { 
