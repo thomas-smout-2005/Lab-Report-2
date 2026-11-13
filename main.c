@@ -11,7 +11,7 @@
 #define MSB_NODE DT_NODELABEL(bus_msb) 
 
 
-
+ 
 static const struct gpio_dt_spec lsb = 
     GPIO_DT_SPEC_GET(LSB_NODE, gpios); 
 static const struct gpio_dt_spec sb2 = 
@@ -44,7 +44,7 @@ int main(void)
     
     while (1) {
         for (count = 0; count < 10; count++) {
-            write_bus(values[count]);
+            write_bus(value[count]);
             k_sleep(K_MSEC(20));
         }
     }

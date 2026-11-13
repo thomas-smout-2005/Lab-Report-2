@@ -1,29 +1,29 @@
 /* waveform generation-Method 1*/ 
 /* app.overlay*/ 
-
+ 
 
 / { 
     bus_outputs { 
         compatible = "gpio-leds"; 
 
         bus_lsb: led_1 { 
-            gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>; 
-            label = "Bus LSB"; 
+            gpios = <&gpio4 3 GPIO_ACTIVE_HIGH>;   /* ARD_D0 = P4_3 */ 
+            label = "Bus LSB";   /* Just an label for the reader */
         }; 
 
         bus_sb2: led_2 { 
-            gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>; 
-            label = "Bus SB2"; 
+            gpios = <&gpio4 2 GPIO_ACTIVE_HIGH>;   /* ARD_D1 = P4_2 */
+            label = "Bus SB2";   /* Just an label for the reader */
         }; 
 
         bus_sb3: led_3 { 
-            gpios = <&gpio2 ?? GPIO_ACTIVE_HIGH>; 
-            label = "Bus SB3"; 
+            gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;   /* ARD_D2 = P0_29 */
+            label = "Bus SB3";   /* Just an label for the reader */
         };
 
-        bus_msb: led_3 { 
-            gpios = <&gpio3 ?? GPIO_ACTIVE_HIGH>; 
-            label = "Bus MSB"; 
+        bus_msb: led_4 { 
+            gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>;   /* ARD_D3 = P1_23 */
+            label = "Bus MSB";   /* Just an label for the reader */
         };
     }; 
 }; 
